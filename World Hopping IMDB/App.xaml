@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="World_Hopping_IMDB.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:World_Hopping_IMDB">
+
+</Application>
