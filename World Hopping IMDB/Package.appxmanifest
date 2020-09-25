@@ -9,7 +9,7 @@
   <Identity
     Name="CommunityLabsIMDB"
     Publisher="CN=C3FB659B-AF96-4020-A2A6-6DBE09CDBBDE"
-    Version="1.0.14.0" />
+    Version="1.0.15.0" />
 
   <mp:PhoneIdentity PhoneProductId="c4abfcc1-801e-48cb-8453-47626cb6aabb" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

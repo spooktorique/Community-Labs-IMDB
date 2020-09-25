@@ -129,6 +129,10 @@ namespace World_Hopping_IMDB
         {
             UpdateResult(e.NewValue, 2);
         }
+        private void rctl_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            UpdateResult(e.NewValue, 2);
+        }
 
         private void Lagginess_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
