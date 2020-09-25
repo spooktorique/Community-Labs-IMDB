@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="856" Height="778">
 
     <Grid>
-        <muxc:TextBlock x:Name="vRating" x:FieldModifier="public" HorizontalAlignment="Left" Margin="367,262,0,0" Text="0.0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="256" Width="450" TextAlignment="Center" SelectionChanged="vRating_SelectionChanged"/>
+        <muxc:TextBlock x:Name="vRating" x:FieldModifier="public" HorizontalAlignment="Left" Margin="375,342,0,0" Text="0.0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="256" Width="450" TextAlignment="Center" SelectionChanged="vRating_SelectionChanged"/>
         <muxc:Slider x:Name="scuff" HorizontalAlignment="Left" Margin="53,196,0,0" VerticalAlignment="Top" Width="250" Maximum="5" Minimum="1" Orientation="Horizontal" Value="1" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Scuff_ValueChanged"/>
         <muxc:Slider x:Name="lagginess" HorizontalAlignment="Left" Margin="53,267,0,0" VerticalAlignment="Top" Width="250" Maximum="5" Minimum="1" Orientation="Horizontal" Value="1" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Lagginess_ValueChanged"/>
         <muxc:Slider x:Name="humor" HorizontalAlignment="Left" Margin="53,337,0,0" VerticalAlignment="Top" Width="250" Maximum="5" Minimum="1" Orientation="Horizontal" Value="1" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Humor_ValueChanged"/>
@@ -25,7 +25,12 @@
         <muxc:Slider x:Name="technical" HorizontalAlignment="Left" Margin="53,642,0,0" VerticalAlignment="Top" Width="250" Maximum="5" Minimum="1" Orientation="Horizontal" Value="1" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Technical_ValueChanged"/>
         <muxc:TextBlock HorizontalAlignment="Left" Margin="53,618,0,0" Text="Technical" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <muxc:TextBlock HorizontalAlignment="Left" Margin="53,28,0,0" Text="Community Labs IMDB" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <muxc:TextBlock HorizontalAlignment="Left" Text="World Rating" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Width="275" TextAlignment="Center" Margin="454,204,0,0"/>
+        <muxc:TextBlock HorizontalAlignment="Left" Text="World Rating" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Width="211" TextAlignment="Center" Margin="487,323,0,0"/>
         <muxc:Button x:Name="btnReset" Content="Reset" Margin="53,706,0,0" VerticalAlignment="Top" Click="btnReset_Click"/>
+        <muxc:Button Content="New World" Margin="662,701,0,0" VerticalAlignment="Top" Click="Button_Click" Background="{muxc:ThemeResource SystemAccentColor}"/>
+        <muxc:TextBox x:Name="tbxWorldName" HorizontalAlignment="Left" Margin="428,199,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" PlaceholderText="Optional" Width="267"/>
+        <muxc:TextBlock HorizontalAlignment="Left" Margin="428,172,0,0" Text="World Name" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <muxc:TextBox x:Name="tbxAuthor" HorizontalAlignment="Left" Margin="428,267,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" PlaceholderText="Optional" Width="267"/>
+        <muxc:TextBlock HorizontalAlignment="Left" Margin="428,243,0,0" Text="Author Name" TextWrapping="Wrap" VerticalAlignment="Top"/>
     </Grid>
 </Page>
