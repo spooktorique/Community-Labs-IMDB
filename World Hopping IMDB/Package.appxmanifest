@@ -9,7 +9,7 @@
   <Identity
     Name="CommunityLabsIMDB"
     Publisher="CN=C3FB659B-AF96-4020-A2A6-6DBE09CDBBDE"
-    Version="1.0.15.0" />
+    Version="1.1.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="c4abfcc1-801e-48cb-8453-47626cb6aabb" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
@@ -40,6 +40,15 @@
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" ShortName="WH IMDB" Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
+      <Extensions>
+        <uap:Extension Category="windows.fileSavePicker">
+          <uap:FileSavePicker>
+            <uap:SupportedFileTypes>
+              <uap:FileType>.xlsx</uap:FileType>
+            </uap:SupportedFileTypes>
+          </uap:FileSavePicker>
+        </uap:Extension>
+      </Extensions>
     </Application>
   </Applications>
 </Package>

@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="815" Height="778" MinWidth="817" MinHeight="778">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="815" Height="739" MinWidth="817" MinHeight="778">
 
     <Grid>
         <muxc:Border BorderThickness="1" Height="143" VerticalAlignment="Top" RequestedTheme="Light" Width="818" HorizontalAlignment="Stretch" Margin="-1,-1,-1,0">
@@ -25,29 +25,39 @@
                 <muxc:AcrylicBrush TintColor="#CC212121" BackgroundSource="HostBackdrop" TintOpacity="0.85"/>
             </muxc:Border.Background>
         </muxc:Border>
-        <muxc:TextBlock x:Name="vRating" x:FieldModifier="public" HorizontalAlignment="Left" Margin="431,342,0,0" Text="0.0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="256" Width="340" TextAlignment="Center" SelectionChanged="vRating_SelectionChanged"/>
-        <muxc:Slider x:Name="scuff" HorizontalAlignment="Left" Margin="53,196,0,0" VerticalAlignment="Top" Width="250" Maximum="5" Minimum="1" Orientation="Horizontal" Value="1" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Scuff_ValueChanged"/>
-        <muxc:Slider x:Name="lagginess" HorizontalAlignment="Left" Margin="53,267,0,0" VerticalAlignment="Top" Width="250" Maximum="5" Minimum="1" Orientation="Horizontal" Value="1" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Lagginess_ValueChanged"/>
-        <muxc:Slider x:Name="humor" HorizontalAlignment="Left" Margin="53,337,0,0" VerticalAlignment="Top" Width="250" Maximum="5" Minimum="1" Orientation="Horizontal" Value="1" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Humor_ValueChanged"/>
-        <muxc:Slider x:Name="thottery" HorizontalAlignment="Left" Margin="53,411,0,0" VerticalAlignment="Top" Width="250" Maximum="5" Minimum="1" Orientation="Horizontal" Value="1" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Thottery_ValueChanged"/>
-        <muxc:Slider x:Name="effort" HorizontalAlignment="Left" Margin="53,489,0,0" VerticalAlignment="Top" Width="250" Maximum="5" Minimum="1" Orientation="Horizontal" Value="1" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Slider_ValueChanged"/>
+        <muxc:TextBlock x:Name="vRating" x:FieldModifier="public" HorizontalAlignment="Left" Margin="431,386,0,0" Text="-0.0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="180" Width="340" TextAlignment="Center" SelectionChanged="vRating_SelectionChanged" Height="291"/>
+        <muxc:Slider x:Name="scuff" HorizontalAlignment="Left" Margin="53,196,0,0" VerticalAlignment="Top" Width="325" Maximum="5" Minimum="-5" Orientation="Horizontal" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Scuff_ValueChanged"/>
+        <muxc:Slider x:Name="lagginess" HorizontalAlignment="Left" Margin="53,267,0,0" VerticalAlignment="Top" Width="325" Maximum="5" Minimum="-5" Orientation="Horizontal" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Lagginess_ValueChanged"/>
+        <muxc:Slider x:Name="humor" HorizontalAlignment="Left" Margin="53,337,0,0" VerticalAlignment="Top" Width="325" Maximum="5" Minimum="-5" Orientation="Horizontal" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Humor_ValueChanged"/>
+        <muxc:Slider x:Name="thottery" HorizontalAlignment="Left" Margin="53,411,0,0" VerticalAlignment="Top" Width="325" Maximum="5" Minimum="-5" Orientation="Horizontal" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Thottery_ValueChanged"/>
+        <muxc:Slider x:Name="effort" HorizontalAlignment="Left" Margin="53,489,0,0" VerticalAlignment="Top" Width="325" Maximum="5" Minimum="-5" Orientation="Horizontal" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Slider_ValueChanged"/>
         <muxc:TextBlock HorizontalAlignment="Left" Margin="53,172,0,0" Text="Scuff" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <muxc:TextBlock HorizontalAlignment="Left" Margin="53,243,0,0" Text="Lagginess" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <muxc:TextBlock HorizontalAlignment="Left" Margin="53,313,0,0" Text="Humor" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <muxc:TextBlock HorizontalAlignment="Left" Margin="53,243,0,0" Text="Laggy" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <muxc:TextBlock HorizontalAlignment="Left" Margin="53,313,0,0" Text="Dad Joke" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <muxc:TextBlock HorizontalAlignment="Left" Margin="53,387,0,0" Text="Thottery" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <muxc:TextBlock HorizontalAlignment="Left" Margin="53,465,0,0" Text="Effort" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <muxc:Slider x:Name="edginess" HorizontalAlignment="Left" Margin="53,567,0,0" VerticalAlignment="Top" Width="250" Maximum="5" Minimum="1" Orientation="Horizontal" Value="1" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Edginess_ValueChanged"/>
+        <muxc:TextBlock HorizontalAlignment="Left" Margin="53,465,0,0" Text="Lazy" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <muxc:Slider x:Name="edginess" HorizontalAlignment="Left" Margin="53,567,0,0" VerticalAlignment="Top" Width="325" Maximum="5" Minimum="-5" Orientation="Horizontal" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Edginess_ValueChanged"/>
         <muxc:TextBlock HorizontalAlignment="Left" Margin="53,543,0,0" Text="Edginess" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <muxc:Slider x:Name="technical" HorizontalAlignment="Left" Margin="53,642,0,0" VerticalAlignment="Top" Width="250" Maximum="5" Minimum="1" Orientation="Horizontal" Value="1" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Technical_ValueChanged"/>
-        <muxc:TextBlock HorizontalAlignment="Left" Margin="53,618,0,0" Text="Technical" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <muxc:Slider x:Name="technical" HorizontalAlignment="Left" Margin="53,642,0,0" VerticalAlignment="Top" Width="325" Maximum="5" Minimum="-5" Orientation="Horizontal" TickFrequency="1" SmallChange="1" LargeChange="1" ValueChanged="Technical_ValueChanged"/>
+        <muxc:TextBlock HorizontalAlignment="Left" Margin="53,618,0,0" Text="Prefab" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <muxc:TextBlock HorizontalAlignment="Left" Margin="53,48,0,0" Text="Community Labs IMDB" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
         <muxc:TextBlock HorizontalAlignment="Left" Text="World Rating" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Width="211" TextAlignment="Center" Margin="495,338,0,0"/>
         <muxc:Button x:Name="btnReset" Content="Reset" Margin="53,706,0,0" VerticalAlignment="Top" Click="btnReset_Click"/>
-        <muxc:Button Content="New World" Margin="689,701,0,0" VerticalAlignment="Top" Click="Button_Click" Background="{muxc:ThemeResource SystemAccentColor}"/>
+        <muxc:Button Content="New World" Margin="689,706,0,0" VerticalAlignment="Top" Click="Button_Click" Background="{muxc:ThemeResource SystemAccentColor}"/>
         <muxc:TextBox x:Name="tbxWorldName" HorizontalAlignment="Left" Margin="428,199,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" PlaceholderText="Optional" Width="350"/>
         <muxc:TextBlock HorizontalAlignment="Left" Margin="428,172,0,0" Text="World Name" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <muxc:TextBox x:Name="tbxAuthor" HorizontalAlignment="Left" Margin="428,267,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" PlaceholderText="Optional" Width="350"/>
         <muxc:TextBlock HorizontalAlignment="Left" Margin="428,243,0,0" Text="Author Name" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <muxc:Image HorizontalAlignment="Left" Height="100" Margin="678,22,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/labs.gif"/>
+        <muxc:TextBlock x:Name="lblCounter" HorizontalAlignment="Left" Margin="441,713,0,0" Text="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" FontWeight="Bold" FontSize="14"/>
+        <muxc:TextBlock HorizontalAlignment="Left" Margin="332,713,0,0" Text="Worlds Visited:" TextWrapping="Wrap" VerticalAlignment="Top" Width="95"/>
+        <muxc:Button Content="Export Data" Margin="577,706,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <muxc:TextBlock HorizontalAlignment="Left" Margin="334,172,0,0" Text="Quality" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right"/>
+        <muxc:TextBlock HorizontalAlignment="Left" Margin="314,243,0,0" Text="Optimized" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right"/>
+        <muxc:TextBlock HorizontalAlignment="Left" Margin="340,313,0,0" Text="Funny" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right"/>
+        <muxc:TextBlock HorizontalAlignment="Left" Margin="304,387,0,0" Text="Wholesome" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right"/>
+        <muxc:TextBlock HorizontalAlignment="Left" Margin="344,465,0,0" Text="Effort" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right"/>
+        <muxc:TextBlock HorizontalAlignment="Left" Margin="332,543,0,0" Text="Normal" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right"/>
+        <muxc:TextBlock HorizontalAlignment="Left" Margin="322,618,0,0" Text="Technical" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right"/>
     </Grid>
 </Page>
